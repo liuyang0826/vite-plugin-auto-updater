@@ -1,0 +1,42 @@
+{
+  "name": "@liuyang0826/vite-plugin-auto-updater",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "自动检测应用是否发布新版本",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "unbuild",
+    "release": "unbuild && bumpp && npm publish"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuyang0826/vite-plugin-auto-updater.git"
+  },
+  "keywords": [
+    "vite"
+  ],
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "author": "liuyang0826<1161906592@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuyang0826/vite-plugin-auto-updater/issues"
+  },
+  "homepage": "https://github.com/liuyang0826/vite-plugin-auto-updater#readme",
+  "devDependencies": {
+    "@liuyang0826/eslint-config": "^0.0.2",
+    "@types/node": "^18.15.3",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.24.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4",
+    "unbuild": "^0.9.4",
+    "vite": "^4.2.0"
+  }
+}
